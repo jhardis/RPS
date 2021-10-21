@@ -41,25 +41,25 @@ enum Sign {
             case .rock:
                 return .draw
             case .paper:
-                return .lose
-            case .scissors:
                 return .win
+            case .scissors:
+                return .lose
             }
         case .paper:
             switch opponent {
             case .rock:
-                return .win
+                return .lose
             case .paper:
                 return .draw
             case .scissors:
-                return .lose
+                return .win
             }
         case .scissors:
             switch opponent {
             case .rock:
-                return .lose
-            case .paper:
                 return .win
+            case .paper:
+                return .lose
             case .scissors:
                 return .draw
             }

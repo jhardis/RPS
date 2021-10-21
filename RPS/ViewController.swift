@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     func updateUI(_ state: GameState) {
         switch state {
         case .start:
-            gameStatus.text = ""
+            gameStatus.text = "Rock, Paper, Scissors?"
             self.view.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
             appSign.text = "🤖"
             playagainButton.isHidden = true
